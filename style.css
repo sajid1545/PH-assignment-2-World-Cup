@@ -25,6 +25,7 @@ main {
     margin-bottom: 5%;
     padding-top: 3%;
     transition: transform 0.4s;
+
 }
 
 .top-banner:hover {
@@ -48,7 +49,30 @@ main {
     font-weight: 700;
     line-height: 80px;
     margin-bottom: 20px;
+    animation: title-color-change 6s infinite;
+
 }
+
+@keyframes title-color-change {
+    0% {
+        color: yellow;
+    }
+
+
+
+    50% {
+
+        color: white;
+    }
+
+
+    100% {
+        color: lightcoral;
+    }
+
+
+}
+
 
 .banner-details {
     font-size: 16px;
@@ -179,6 +203,8 @@ main {
     color: #161616;
     border-radius: 6px;
     margin-bottom: 15px;
+    box-shadow: 10px 10px 10px lightgray;
+
 }
 
 .blog-info p {
@@ -197,9 +223,9 @@ main {
 .view-button {
     /* width: 5%; */
     margin: 5% auto;
-    display: flex;
-    justify-content: center;
-    margin-left: 25%;
+    /* display: flex;
+    justify-content: center; */
+    /* margin-left: 25%; */
 }
 
 
@@ -212,6 +238,9 @@ main {
     height: 50px;
     background: #DD0000;
     border-radius: 7px;
+    color: white;
+    font-weight: 800;
+    font-size: 23px;
 }
 
 
@@ -236,6 +265,38 @@ footer {
     margin-top: 80px;
 }
 
+.foot-title a {
+    color: white;
+    text-decoration: none;
+    animation: color-change 3s infinite;
+}
+
+
+
+@keyframes color-change {
+    0% {
+        color: #DD0000;
+    }
+
+    25% {
+        color: orangered;
+    }
+
+    50% {
+
+        color: white;
+    }
+
+    75% {
+        color: yellow;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+
 hr {
     margin-bottom: 50px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -257,6 +318,7 @@ hr {
     color: #B9B9B9;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .contents:hover {
@@ -283,3 +345,97 @@ hr {
 
 
 /* To make responsive for Mobile Phones */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    main {
+        width: 90%;
+    }
+
+    /* top banner */
+
+
+
+    .banner-title {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+    }
+
+    .banner-details {
+        font-size: 15px;
+    }
+
+
+
+    .top-banner-player img {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    /* blog section */
+
+    .blogs-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pages-link-box {
+        background-color: white;
+        border: 0;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .pages-link-button {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .pages-link {
+        border: 1px solid;
+        width: 280px;
+        height: 68px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+    }
+
+    .blog-button button {
+        width: 40%;
+        height: 55px;
+        outline: none;
+        font-size: 25px;
+        background-color: white;
+        box-shadow: 10px 10px 5px 0px lightgray;
+
+    }
+
+    .last-article {
+        display: none;
+    }
+
+    .view-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        outline: none;
+    }
+
+    .view-all-btn button {
+        display: block;
+        box-shadow: 10px 10px 5px 0px rgb(150, 146, 146);
+
+    }
+
+    .footer-contents {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
