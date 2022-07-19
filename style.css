@@ -581,11 +581,10 @@ hr {
 
     .pages-link {
         border: 1px solid grey;
-        width: 270px;
     }
 
     .pages-link a {
-        font-size: 25px;
+        font-size: 20px;
 
     }
 
