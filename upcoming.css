@@ -18,7 +18,8 @@
 }
 
 .flags img {
-    width: 90px;
+    width: 93px;
+    /* height: 55px; */
 }
 
 .flag-fixtures {
@@ -64,6 +65,10 @@
         width: 100%;
         column-gap: 0;
     }
+
+    .flags {
+        width: 100%;
+    }
 }
 
 
@@ -77,6 +82,10 @@
     .match-fixtures {
         margin-left: 0;
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .flags {
         width: 100%;
     }
 
