@@ -59,15 +59,23 @@ main {
     }
 
 
-
-    50% {
-
-        color: white;
+    25% {
+        color: chartreuse;
     }
 
 
+    50% {
+
+        color: red;
+    }
+
+
+    75% {
+        color: white;
+    }
+
     100% {
-        color: lightcoral;
+        color: blue;
     }
 
 
@@ -86,7 +94,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 160px;
+    width: 190px;
     height: 50px;
     background: #DD0000;
     border-radius: 7px;
@@ -102,8 +110,11 @@ main {
 }
 
 .button .fa-angle-right {
+    margin-bottom: -5px;
+    font-size: 25px;
     color: white;
-    margin-left: 10px;
+    margin-left: 20px;
+
 }
 
 .top-banner-player {
@@ -174,6 +185,7 @@ main {
 
 .orange-background a {
     color: white;
+    font-style: italic;
 }
 
 .blogs {
@@ -219,6 +231,8 @@ main {
     gap: 30px;
     margin-top: 20px;
 }
+
+
 
 .view-button {
     /* width: 5%; */
@@ -344,7 +358,7 @@ hr {
 
 
 
-/* To make responsive for Mobile Phones */
+/* To make responsive for Tablets */
 
 @media screen and (min-width:768px) and (max-width:1023px) {
 
@@ -417,6 +431,10 @@ hr {
 
     }
 
+    .blog-icon {
+        font-size: 22px;
+    }
+
     .last-article {
         display: none;
     }
@@ -437,5 +455,119 @@ hr {
     .footer-contents {
         width: 100%;
         margin-bottom: 50px;
+    }
+}
+
+
+/* To make responsive for Mobile Phones */
+
+
+@media screen and (max-width:765px) {
+
+
+    /* top banner */
+
+    .top-banner-details {
+        flex-direction: column;
+    }
+
+    .banner-info,
+    .top-banner-player {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 40px;
+    }
+
+    .banner-details {
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .button {
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .button a {
+        font-size: 20px;
+    }
+
+    .button .fa-angle-right {
+        margin-bottom: -5px;
+        margin-left: 30px;
+        font-size: 25px;
+    }
+
+    .top-banner-player img {
+        width: 100%;
+        margin-left: -5%;
+
+    }
+
+    /* blog section */
+
+    .blogs-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pages-link-box {
+        background-color: #FFFFFF;
+        /* width: 100%; */
+    }
+
+    .pages-link {
+        border: 1px solid grey;
+        width: 270px;
+    }
+
+    .pages-link a {
+        font-size: 25px;
+
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+    .blog-button button {
+        width: 50%;
+        height: 45px;
+        outline: none;
+        font-size: 20px;
+        background-color: white;
+        box-shadow: 10px 10px 5px 0px lightgray;
+
+    }
+
+    .blog-icon {
+        font-size: 22px;
+    }
+
+    .footer-contents {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contents {
+        margin-top: 10%;
+    }
+
+    footer hr {
+        margin-bottom: 20px;
     }
 }
