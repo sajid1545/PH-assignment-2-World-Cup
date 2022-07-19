@@ -1,13 +1,4 @@
-/* Blogs Section */
-
-
-
-
-
-
-
-
-
+/*--------------------------- Blogs Section ---------------------------*/
 
 .match-fixtures {
     margin-left: 2%;
@@ -58,4 +49,35 @@
     font-size: 16px;
     color: #4D4D4D;
     margin-bottom: 50px;
+}
+
+
+
+/* ---------------------------To make responsive for Mobile Phones ---------------------------*/
+
+@media screen and (max-width:767px) {
+
+
+    .match-fixtures {
+        margin-left: 0;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        column-gap: 0;
+    }
+}
+
+
+
+
+/* ---------------------------To make responsive for Tablets--------------------------- */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+
+    .match-fixtures {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
 }
