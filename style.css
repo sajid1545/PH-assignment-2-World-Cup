@@ -1,0 +1,285 @@
+/* Google Font (poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 83%;
+    margin: 50px auto;
+
+}
+
+/* Top Banner */
+
+
+
+.top-banner {
+    background: #161616;
+    border-radius: 30px;
+    padding: 5%;
+    padding-bottom: 0;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    transition: transform 0.4s;
+}
+
+.top-banner:hover {
+    transform: scale(0.9);
+}
+
+.top-banner-details {
+    display: flex;
+    /* align-items: center; */
+}
+
+.banner-info {
+    width: 50%;
+    margin-top: 7%;
+    /* margin-left: 3%; */
+}
+
+.banner-title {
+    font-size: 70px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.banner-details {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    background: #DD0000;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 17px;
+    color: #FFFFFF;
+
+}
+
+.button .fa-angle-right {
+    color: white;
+    margin-left: 10px;
+}
+
+.top-banner-player {
+    width: 50%;
+    text-align: center;
+    margin-left: 5%;
+
+}
+
+.top-banner-player img {
+    width: 581px;
+    height: 613px;
+    margin-bottom: -7px;
+
+}
+
+
+
+
+/* Blog Section Style */
+
+.blogs-section {
+    display: flex;
+}
+
+.pages-link-box {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 50%;
+    background: #161616;
+    border-radius: 10px;
+    background-color: #161616;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.pages-link {
+    width: 220px;
+    height: 52px;
+    background-color: #FFFFFF;
+    text-align: center;
+    /* margin: 5px; */
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 15% 0;
+    cursor: pointer;
+}
+
+
+
+
+.pages-link a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.578);
+}
+
+.orange-background {
+    background-color: orangered;
+}
+
+.orange-background a {
+    color: white;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: 2%;
+}
+
+.blog {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.blog .blog-thumbnail img {
+    width: 100%;
+}
+
+.blog-details {
+    padding: 15px;
+}
+
+.blog-button button {
+    width: 100px;
+    height: 32px;
+    font-size: 16px;
+    color: #161616;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.blog-info p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #161616;
+}
+
+.blog-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.view-button {
+    /* width: 5%; */
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+
+/* View Button */
+
+.view-all-btn button {
+    display: none;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    background: #DD0000;
+    border-radius: 7px;
+}
+
+
+/* footer style */
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #161616;
+}
+
+.footer-info {
+    padding: 5%;
+    color: white;
+}
+
+.foot-title {
+    margin-bottom: 50px;
+    size: 45px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+hr {
+    margin-bottom: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-contents {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 80px;
+}
+
+
+
+.contents {
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9B9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
+}
+
+.contents:hover {
+    margin-left: 15px;
+    color: orangered;
+}
+
+.social-links {
+    font-size: 35px;
+}
+
+.social-links a {
+    color: white;
+    margin-left: 2%;
+    transition: all 0.4s;
+}
+
+.social-links a:hover {
+    color: #DD0000;
+}
+
+
+
+
+
+/* To make responsive for Mobile Phones */

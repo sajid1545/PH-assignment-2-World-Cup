@@ -1,0 +1,61 @@
+/* Blogs Section */
+
+
+
+
+
+
+
+
+
+
+.match-fixtures {
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+    gap: 35px;
+
+}
+
+.fixtures {
+    border: 1px solid lightgrey;
+    padding: 20px 35px;
+    text-align: center;
+    border-radius: 6px;
+    width: 80%;
+}
+
+.flags img {
+    width: 90px;
+}
+
+.flag-fixtures {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.vs {
+    font-weight: 700;
+    font-size: 16px;
+    color: #0c0b0b;
+}
+
+.fixture-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #161616;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.fixtures-time p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+    margin-bottom: 50px;
+}
