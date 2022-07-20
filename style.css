@@ -39,7 +39,7 @@ main {
 
 .top-banner:hover {
     transform: scale(0.9);
-    box-shadow: 10px 10px 15px #DD0000;
+    box-shadow: 10px 10px 15px #242B2E;
 
 }
 
@@ -63,18 +63,18 @@ main {
     color: #FFFFFF;
     font-weight: 700;
     line-height: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     animation: title-color-change 10s infinite;
 
 }
 
 @keyframes title-color-change {
     0% {
-        color: yellow;
+        color: #6A1B4D;
     }
 
     10% {
-        color: coral;
+        color: #5A20CB;
     }
 
     20% {
@@ -82,11 +82,11 @@ main {
     }
 
     30% {
-        color: darkviolet;
+        color: #E07C24;
     }
 
     40% {
-        color: deeppink;
+        color: #FF6666;
     }
 
 
@@ -100,7 +100,7 @@ main {
     }
 
     70% {
-        color: white;
+        color: #8D3DAF;
     }
 
     80% {
@@ -120,7 +120,7 @@ main {
 
 
 .banner-details {
-    font-size: 16px;
+    font-size: 17px;
     color: #FFFFFF;
     font-weight: 400;
     margin-bottom: 30px;
@@ -142,7 +142,7 @@ main {
 }
 
 .button:hover {
-    background: orange;
+    background: #E8BD0D;
 
 }
 
@@ -167,8 +167,14 @@ main {
     font-size: 25px;
     color: white;
     margin-left: 20px;
+    transition: all 0.4s;
 
 }
+
+.button:hover .fa-angle-right {
+    color: #0D0D0D;
+}
+
 
 .top-banner-player {
     width: 50%;
@@ -236,8 +242,12 @@ main {
 }
 
 .pages-link:hover a {
-    color: blue;
+    color: white;
     font-style: italic;
+}
+
+.pages-link:hover {
+    background-color: orangered;
 }
 
 
@@ -259,7 +269,7 @@ main {
 }
 
 .blog {
-    border: 1px solid lightgray;
+    border: 1px solid #CAD5E2;
     border-radius: 8px;
 }
 
@@ -283,7 +293,7 @@ main {
     color: #161616;
     border-radius: 6px;
     margin-bottom: 15px;
-    box-shadow: 10px 10px 10px lightgray;
+    box-shadow: 5px 5px 10px lightgray;
     cursor: pointer;
 
 }
@@ -342,7 +352,7 @@ footer {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    background-color: #161616;
+    background-color: #0D0D0D;
 }
 
 .footer-info {
@@ -362,14 +372,15 @@ footer {
     text-decoration: none;
     animation: color-change 3s infinite;
     font-family: 'Lemon', cursive;
+    letter-spacing: 3px;
 
 }
 
-
+/* ---------------------------Footer Title Animation--------------------------- */
 
 @keyframes color-change {
     0% {
-        color: #DD0000;
+        color: #E6425E;
         ;
     }
 
@@ -380,7 +391,7 @@ footer {
 
     50% {
 
-        color: white;
+        color: #383CC1;
 
     }
 
@@ -390,7 +401,7 @@ footer {
     }
 
     100% {
-        color: green;
+        color: #3DBE29;
 
     }
 }
@@ -398,7 +409,7 @@ footer {
 
 hr {
     margin-bottom: 80px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #CAD5E2;
 }
 
 .footer-contents {
@@ -432,8 +443,8 @@ hr {
 }
 
 .contents:hover {
-    margin-left: 15px;
-    color: orange;
+    margin-left: 20px;
+    color: #D82E2F;
 }
 
 .social-links {
@@ -443,11 +454,11 @@ hr {
 .social-links a {
     color: white;
     margin-left: 2%;
-    transition: all 0.4s;
+    transition: all 0.6s;
 }
 
 .social-links a:hover {
-    color: orange;
+    color: #E8BD0D;
 }
 
 
@@ -564,7 +575,18 @@ hr {
     .footer-contents {
         width: 100%;
         margin-bottom: 50px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 38px;
+        justify-items: center;
+
     }
+
+    .last-tablet-content {
+        position: relative;
+        left: 150px;
+        width: 100%;
+    }
+
 }
 
 
