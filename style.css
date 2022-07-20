@@ -1,6 +1,12 @@
 /* ---------------------------Google Font (poppins)--------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+
+/* --------------------------Lemon Google Font-------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+/* font-family: 'Lemon', cursive; */
+
+
 /* --------------------------- Common styles ---------------------------*/
 
 * {
@@ -51,6 +57,8 @@ main {
 /* ---------------------------Banner Title and Animation--------------------------- */
 
 .banner-title {
+    font-family: 'Lemon', cursive;
+
     font-size: 70px;
     color: #FFFFFF;
     font-weight: 700;
