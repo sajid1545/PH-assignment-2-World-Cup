@@ -1,4 +1,4 @@
-/* Google Font (poppins) */
+/* ---------------------------Google Font (poppins)--------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 /* --------------------------- Common styles ---------------------------*/
@@ -27,12 +27,14 @@ main {
     margin-bottom: 5%;
     padding-top: 3%;
     transition: transform 1.5s, box-shadow 1.5s;
-
+    animation: top-banner-animation 5s infinite;
 }
+
 
 .top-banner:hover {
     transform: scale(0.9);
-    box-shadow: 10px 10px 15px 2px #DD0000;
+    box-shadow: 10px 10px 15px #DD0000;
+
 }
 
 .top-banner-details {
@@ -45,6 +47,8 @@ main {
     margin-top: 7%;
     /* margin-left: 3%; */
 }
+
+/* ---------------------------Banner Title and Animation--------------------------- */
 
 .banner-title {
     font-size: 70px;
@@ -113,6 +117,8 @@ main {
     font-weight: 400;
     margin-bottom: 30px;
 }
+
+/* ---------------------------Top Banner Button CSS--------------------------- */
 
 .button {
     display: flex;
@@ -207,8 +213,8 @@ main {
     margin: 15% 0;
     cursor: pointer;
     outline: none;
+    transition: all 0.8s;
 }
-
 
 
 
@@ -217,7 +223,16 @@ main {
     font-size: 20px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.578);
+    transition: all 0.8s;
+
 }
+
+.pages-link:hover a {
+    color: orangered;
+    font-style: italic;
+    font-weight: bolder;
+}
+
 
 .orange-background {
     background-color: orangered;
@@ -252,6 +267,8 @@ main {
     padding: 15px;
 }
 
+/* ---------------------------Blog Button--------------------------- */
+
 .blog-button button {
     width: 100px;
     height: 32px;
@@ -260,6 +277,7 @@ main {
     border-radius: 6px;
     margin-bottom: 15px;
     box-shadow: 10px 10px 10px lightgray;
+    cursor: pointer;
 
 }
 
@@ -269,6 +287,9 @@ main {
     color: #161616;
 }
 
+
+/* Blog Icon CSS */
+
 .blog-icons {
     display: flex;
     align-items: center;
@@ -276,10 +297,13 @@ main {
     margin-top: 20px;
 }
 
-.blog-icon .time {
+.blog-icon .time,
+.comment {
     margin-left: 5px;
 }
 
+
+/* ---------------------------View Button (hidden in desktop mode)--------------------------- */
 
 .view-button {
     /* width: 5%; */
@@ -290,7 +314,7 @@ main {
 }
 
 
-/* View Button */
+
 
 .view-all-btn button {
     display: none;
@@ -305,7 +329,7 @@ main {
 }
 
 
-/* footer style */
+/* ---------------------------footer style--------------------------- */
 
 footer {
     width: 100%;
@@ -337,23 +361,28 @@ footer {
 @keyframes color-change {
     0% {
         color: #DD0000;
+        ;
     }
 
     25% {
         color: orangered;
+
     }
 
     50% {
 
         color: white;
+
     }
 
     75% {
         color: yellow;
+
     }
 
     100% {
         color: green;
+
     }
 }
 
@@ -474,6 +503,8 @@ hr {
         width: 280px;
         height: 68px;
     }
+
+
 
     .blogs {
         grid-template-columns: repeat(2, 1fr);
