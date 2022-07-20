@@ -26,12 +26,13 @@ main {
     padding-bottom: 0;
     margin-bottom: 5%;
     padding-top: 3%;
-    transition: transform 1.5s;
+    transition: transform 1.5s, box-shadow 1.5s;
 
 }
 
 .top-banner:hover {
     transform: scale(0.9);
+    box-shadow: 10px 10px 15px 2px #DD0000;
 }
 
 .top-banner-details {
@@ -181,13 +182,14 @@ main {
 .pages-link-box {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    height: 50%;
+    width: 312px;
+    height: 312px;
     background: #161616;
     border-radius: 10px;
     background-color: #161616;
     justify-content: center;
     align-items: center;
+    padding: 0px 35px;
 }
 
 
@@ -197,7 +199,6 @@ main {
     height: 52px;
     background-color: #FFFFFF;
     text-align: center;
-    /* margin: 5px; */
     margin-top: 10%;
     display: flex;
     justify-content: center;
@@ -205,6 +206,7 @@ main {
     border-radius: 7px;
     margin: 15% 0;
     cursor: pointer;
+    outline: none;
 }
 
 
@@ -231,7 +233,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-left: 2%;
-    width: 75%;
+    width: 100%;
 }
 
 .blog {
@@ -240,8 +242,8 @@ main {
 }
 
 .blog .blog-thumbnail img {
-    /* width: 100%; */
-    width: 312px;
+    width: 100%;
+    /* width: 312px; */
     border-radius: 10px 10px 0px 0px;
 
 }
@@ -274,6 +276,9 @@ main {
     margin-top: 20px;
 }
 
+.blog-icon .time {
+    margin-left: 5px;
+}
 
 
 .view-button {

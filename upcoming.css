@@ -6,22 +6,23 @@
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
     gap: 35px;
-    width: 75%;
+    width: 100%;
 
 }
 
 .fixtures {
     border: 1px solid lightgrey;
-    padding: 20px 35px;
+    padding: 20px 25px;
     text-align: center;
     border-radius: 6px;
-    width: 80%;
 }
+
+
 
 .flags img {
     width: 93px;
-    /* height: 55px; */
 }
+
 
 .flag-fixtures {
     display: flex;
