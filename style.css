@@ -123,18 +123,28 @@ main {
     background: #DD0000;
     border-radius: 7px;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .button:hover {
-    background: rgba(237, 99, 49, 0.862)
+    background: orange;
+
 }
+
+
 
 .button a {
     text-decoration: none;
     font-family: cursive;
     font-size: 17px;
     color: #FFFFFF;
+    transition: all 0.5s ease;
 
+}
+
+.button:hover a {
+
+    color: black;
 }
 
 .button .fa-angle-right {
@@ -171,7 +181,7 @@ main {
 .pages-link-box {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 25%;
     height: 50%;
     background: #161616;
     border-radius: 10px;
@@ -221,6 +231,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-left: 2%;
+    width: 75%;
 }
 
 .blog {
