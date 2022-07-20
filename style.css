@@ -426,12 +426,12 @@ hr {
     right: 33%;
     height: 2px;
     width: 60px;
-    background-image: linear-gradient(yellow, red);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%)
 }
 
 .contents:hover {
     margin-left: 15px;
-    color: orangered;
+    color: orange;
 }
 
 .social-links {
@@ -445,7 +445,7 @@ hr {
 }
 
 .social-links a:hover {
-    color: #DD0000;
+    color: orange;
 }
 
 
